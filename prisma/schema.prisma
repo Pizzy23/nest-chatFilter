@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Msg {
+  id          Int      @id @default(autoincrement())
+  uuid        String   @default("") @db.VarChar(255)
+  msg         String   @default("") @db.VarChar(255)
+  isOffensive Boolean  @default(false) @db.TinyInt()
+  SendIn      DateTime @db.Date()
+}

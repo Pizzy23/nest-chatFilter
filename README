@@ -1,0 +1,7 @@
+Optei por desenvolver o projeto em Nest, uma escolha baseada tanto na minha experiência prévia com essa tecnologia quanto no desejo de me desafiar. A funcionalidade de chat foi implementada com um filtro para identificar palavras de conteúdo impróprio, permitindo uma fácil expansão da lista de palavras à medida que necessário. Nosso sistema inclui um mecanismo no qual mensagens consideradas ofensivas são armazenadas no banco de dados, com uma rota dedicada para usuários que tenham usado linguagem inadequada. Além disso, também existe uma rota para recuperar o histórico completo das conversas.
+
+Dentro do controlador, ao definir o parâmetro "offensive" como true, apenas as palavras ofensivas são capturadas, enquanto manter o valor como false resultará em todo o histórico de conversas sem palavras de baixo calão ou ofensas. Essa abordagem oferece flexibilidade para adaptar a exibição dos chats de acordo com a preferência do usuário, contribuindo para uma experiência mais personalizada.
+
+
+
+
